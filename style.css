@@ -1,0 +1,150 @@
+body {
+  background-color: #aec4da;
+}
+main {
+  width: 50%;
+  max-width: 350px;
+  height: 62vh;
+  background-color: #fff;
+  margin: 5rem auto;
+  text-align: center;
+}
+main p {
+  font-weight: 550;
+  font-size: 0.7rem;
+}
+.circle {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background: white;
+  margin: 0 0.5rem 0 1rem;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  background-color: #618bd4;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.today .line {
+  width: 8rem;
+  height: 0.05rem;
+  background-color: #b4a7b4;
+  position: absolute;
+  margin-top: 0.2rem;
+}
+.today {
+  width: 100%;
+  padding: 1em 0;
+  font-size: smaller;
+  color: #b4a7b4;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.today p {
+  margin-left: 10rem;
+}
+.line.right {
+  margin-left: 14rem;
+}
+.time {
+  color: #b4a7b4;
+  margin-bottom: 0.4rem;
+  font-weight: 900;
+  font-size: 0.82rem;
+}
+.container,
+.containerc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 0 1rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+.container::after,
+.containerb::after,
+.containerc::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 23px;
+  top: 20px;
+  right: 95%;
+  background-color: #e4ebf6;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  z-index: -1;
+}
+.containerb::after {
+  background-color: #f1eff1;
+  left: 95%;
+  top: 18px;
+  z-index: -1;
+  height: 25px;
+  width: 23px;
+  transform: rotate(260deg);
+}
+.containerb,
+.containerd {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 1em;
+  position: relative;
+  z-index: 1;
+}
+.a {
+  background-color: #e4ebf6;
+  width: 60%;
+  height: 1.5rem;
+  padding: 10px 10px;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.b {
+  background-color: #f1eff1;
+  margin-bottom: 0.5rem;
+  width: 70%;
+  height: 1.5rem;
+  padding: 10px 10px;
+  margin-left: 5rem;
+  text-align: left;
+}
+.c {
+  background-color: #e4ebf6;
+  margin-bottom: 0.5rem;
+  width: 18%;
+  height: 1.5rem;
+  padding: 10px 10px 5px;
+}
+.d {
+  background-color: #ffb9bb;
+  margin-bottom: 0.5rem;
+  width: 43%;
+  height: 1.5rem;
+  padding: 5px 10px;
+  margin-left: 10.5rem;
+}
+textarea {
+  border: 0;
+  width: 70%;
+  outline: none;
+  resize: none;
+}
+.e {
+  color: #618bd4;
+  border-top: 1px solid #e4ebf6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.e p {
+  margin: 0.5rem 1rem 0 0;
+  font-size: 1rem;
+}
